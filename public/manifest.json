@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "My Extension",
+	"version": "0.0.1",
+	"description": "My Description",
+	"permissions": ["activeTab", "scripting"],
+	"content_scripts": [
+		{
+			"js": ["content-script.js"],
+			"matches": ["<YOUR_URL_HERE>"]
+		}
+	],
+	"background": {
+		"service_worker": "background.js"
+	}
+}
